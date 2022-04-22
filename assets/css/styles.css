@@ -1,0 +1,150 @@
+@import "uikit-reset.css";
+@import "responsive.css";
+
+html {
+    --PrimaryColor: #009FE2;
+    --SecondaryColor: #1D6EB7;
+    scrollbar-color: var(--SecondaryColor) var(--PrimaryColor);
+}
+
+body,
+h1,
+button {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+body {
+    background-color: #dadeea;
+    font-size: 14px;
+}
+
+a {
+    color: var(--PrimaryColor);
+}
+
+a:hover {
+    color: var(--SecondaryColor);
+}
+
+.Container {
+    height: 100vh;
+}
+
+.width-3xlarge {
+    width: 1000px;
+    background-color: white;
+}
+
+.WButton,
+h1 small,
+.WButton:hover,
+.uk-offcanvas-bar .uk-button-secondary {
+    color: var(--PrimaryColor);
+}
+
+.TrButton,
+.TrButton2 {
+    border: none;
+}
+
+.TrButton {
+    color: white;
+}
+
+.TrButton:focus,
+.TrButton:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.TrButton2,
+.WButton:focus,
+.WButton:hover,
+.uk-legend {
+    color: var(--PrimaryColor);
+}
+
+.TrButton2:focus,
+.TrButton2:hover {
+    color: var(--PrimaryColor);
+    background-color: rgba(0, 158, 226, 0.1);
+}
+
+.WButton {
+    background-color: white;
+}
+
+.WButton:focus,
+.WButton:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+h1,
+.h2 {
+    font-weight: 700;
+}
+
+h1 small,
+.h2 {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+button .uk-icon {
+    margin-left: 2.5px;
+}
+
+footer .uk-subnav>*>a {
+    font-size: 0.65rem !important;
+}
+
+footer .uk-subnav>*>a:hover,
+footer .uk-subnav>*>a:focus {
+    color: black;
+}
+
+.Soc .uk-subnav>*>a {
+    color: white;
+}
+
+.Soc .uk-subnav>*>a:hover,
+.Soc .uk-subnav>*>a:focus {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#Donate .uk-modal-dialog {
+    width: 300px;
+}
+
+#SearchOpen {
+    display: none;
+}
+
+.SearchOpenOpen {
+    display: block !important;
+}
+
+#SearchButton {
+    display: inline-block;
+}
+
+.SearchButtonClose {
+    display: none !important;
+}
+
+.h2 {
+    margin: 0;
+}
+
+.Doc hr{
+    border-top-color: transparent;
+}
+
+.Action .uk-card-primary{
+    color: white;
+}
+
+.Card a:hover {
+text-decoration: none;
+}

@@ -1,0 +1,19 @@
+@media (min-width:300px) {
+
+    .uk-padding-small {
+        padding-left: 7px;
+    }
+}
+
+@media (min-width:640px) {
+
+    .uk-padding-small {
+        padding-left: 15px;
+    }
+}
+
+@media (min-width:960px) {}
+
+@media (min-width:1200px) {}
+
+@media (min-width:1600px) {}

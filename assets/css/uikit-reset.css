@@ -1,0 +1,62 @@
+.uk-navbar-nav>li>a,
+button,
+.uk-subnav>*>a {
+    text-transform: none !important;
+}
+
+.uk-navbar-nav>li>a,
+.uk-navbar-toggle {
+    min-height: 0px;
+    color: #666;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.uk-navbar-nav>li:hover>a,
+.uk-navbar-nav>li>a:focus,
+.uk-navbar-nav>li>a[aria-expanded="true"] {
+    color: black;
+}
+
+.uk-navbar-toggle {
+    color: white;
+}
+
+button {
+    font-weight: 700 !important;
+}
+
+.uk-button-small {
+    font-size: .75rem;
+}
+
+.uk-background-primary,
+.uk-button-primary,
+.uk-offcanvas-bar,
+.uk-card-primary {
+    background-color: var(--PrimaryColor);
+}
+
+.uk-button-primary:focus,
+.uk-button-primary:hover {
+    background-color: var(--SecondaryColor);
+}
+
+.uk-close {
+    color: var(--SecondaryColor);
+}
+
+.uk-text-primary,
+.uk-close:focus,
+.uk-close:hover {
+    color: var(--PrimaryColor) !important;
+}
+
+.uk-offcanvas-bar {
+    color: black;
+}
+
+.uk-offcanvas-bar .uk-nav-primary>li>a,
+.uk-offcanvas-bar .uk-close {
+    color: rgba(255, 255, 255, .75);
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Hello, world!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/vendor/uikit-3.7.3/css/uikit.min.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/uikit@3.7.3/dist/css/uikit.min.css"> -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <!-- <script async src="https://unpkg.com/jquery@3.5.1/dist/jquery.min.js"></script> -->
+    <!-- <script async src="https://unpkg.com/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="Container uk-flex uk-flex-center uk-flex-middle">
+        <div class="uk-container uk-width-2xlarge width-3xlarge uk-padding-remove-horizontal uk-box-shadow-small">
+            <header class="uk-grid-collapse uk-flex-middle" uk-grid>
+                <div class="uk-width-2-3">
+                    <nav class="uk-navbar-container uk-navbar-transparent uk-dark" uk-navbar>
+                        <div class="uk-navbar-left uk-hidden@s">
+                            <ul class="uk-navbar-nav uk-flex-middle">
+                                <li><a href="#"><img src="glogo.svg" alt="" style="height: 35px;"></a></li>
+                            </ul>
+                        </div>
+                        <div class="uk-navbar-left uk-visible@s">
+                            <ul class="uk-navbar-nav uk-flex-middle">
+                                <li><a href="#"><img src="glogo.svg" alt="" style="height: 35px;"></a></li>
+                                <li><a href="org.html">Организация</a></li>
+                                <li><a href="action.html">Деятельность</a></li>
+                                <li><a href="projects.html">Проекты</a></li>
+                                <li><a href="card.html">Публикации</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+                        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+                            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                                <li><a href="#">Организация</a></li>
+                                <li><a href="#">Деятельность</a></li>
+                                <li><a href="#">Проекты</a></li>
+                                <li><a href="#">Публикации</a></li>
+                                <li><a href="#">Документы</a></li>
+                                <li><a href="#">Партнеры</a></li>
+                            </ul>
+
+                            <div>
+                                <button class="WButton uk-button uk-button-secondary uk-button-small uk-width-1-1"
+                                    uk-toggle="target: #Donate">Поддержать <span uk-icon="icon: heart"></span></button>
+                            </div>
+
+                            <div class="uk-margin">
+                                <div class="uk-inline">
+                                    <a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: search"></a>
+                                    <input class="uk-input uk-form-small" type="text">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-3 uk-padding-small uk-background-primary">
+                    <div class="uk-child-width-1-1 uk-grid-collapse uk-text-center uk-hidden@s" uk-grid>
+                        <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#offcanvas-flip" uk-toggle></a>
+                    </div>
+                    <div class="uk-child-width-1-2 uk-grid-collapse uk-text-center uk-visible@s" uk-grid>
+                        <div>
+                            <button id="SearchButton" class="TrButton uk-button uk-button-default uk-button-small"
+                                onclick="SearchOpen(), SearchOpen2()">Поиск <span class="uk-visible@m"
+                                    uk-icon="icon: search"></span></button>
+                            <div id="SearchOpen">
+                                <div class="uk-inline">
+                                    <a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: search"></a>
+                                    <input class="uk-input uk-form-small" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="WButton uk-button uk-button-secondary uk-button-small"
+                                uk-toggle="target: #Donate">Поддержать <span class="uk-visible@m"
+                                    uk-icon="icon: heart"></span></button>
+                        </div>
+                        <div id="Donate" class="uk-flex-top" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <form>
+                                    <fieldset class="uk-fieldset">
+
+                                        <legend class="uk-legend">Поддержать</legend>
+                                        <small class="uk-text-muted">Задача организации, в особенности же понимание
+                                            сущности ресурсосберегающих технологий требует анализа новых
+                                            предложений.</small>
+
+                                        <div class="uk-margin">
+                                            <input class="uk-input" type="text" placeholder="От кого">
+                                        </div>
+
+                                        <div class="uk-margin">
+                                            <div class="uk-width-expand"><input class="uk-input" type="number"
+                                                    placeholder="Сумма (₽)"></div>
+                                        </div>
+
+                                        <div class="uk-margin">
+                                            <textarea class="uk-textarea" rows="5" placeholder="Комментарий"></textarea>
+                                        </div>
+
+                                        <button
+                                            class="uk-button uk-button-primary uk-button-small uk-width-1-1">Отправить
+                                            перевод</button>
+
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="uk-height-large uk-child-width-1-2@s uk-grid-collapse uk-overflow-auto" uk-grid>
+                <div class="uk-padding-large">
+                    <h1 class="uk-text-lead"><small>Автономная некоммерческая организация</small> «Веб-провайдер»</h1>
+                    <p>Предоставляем услуги в широком использовании предоставляемых Интернетом возможностей для
+                        некоммерческих, государственных, коммерческих организаций и физических лиц.</p>
+                    <p>Мы считаем, что интернетизация должна быть доступна для каждого. Каждому должно быть доступны
+                        современные возможности Интернет, которые принесут пользу в деятелньости организаций и жизни
+                        людей.</p>
+                </div>
+                <div class="uk-flex-first uk-flex-last@s">
+                    <div class="uk-background-cover uk-height-1-1"
+                        style="background-image: url(content/web-design-2038872_1280.jpg);">
+                    </div>
+                </div>
+            </div>
+            <div class="uk-child-width-1-2@s uk-grid-collapse uk-flex-middle uk-padding-small uk-padding-remove-top uk-padding-remove-bottom uk-padding-remove-right"
+                uk-grid>
+                <footer class="uk-padding-small">
+                    <ul class="uk-subnav">
+                        <li><a href="/">© 2021 АНО «Веб-провайдер»</a></li>
+                        <li><a href="site.html">О сайте</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                        <li><a href="partners.html">Партнеры</a></li>
+                    </ul>
+                </footer>
+                <div class="uk-flex-first uk-flex-last@s">
+                    <div class="uk-child-width-1-2 uk-grid-collapse uk-flex-middle" uk-grid>
+                        <div class="uk-text-center"><button
+                                class="TrButton2 uk-button uk-button-default uk-button-small"
+                                uk-toggle="target: #Help">Получить помощь <span
+                                    uk-icon="icon: lifesaver"></span></button></div>
+                        <div class="uk-padding-small uk-background-primary">
+                            <div class="Soc uk-float-right">
+                                <ul class="uk-subnav uk-margin-remove">
+                                    <li><a href=""><span uk-icon="icon: facebook"></span></a></li>
+                                    <li><a href=""><span uk-icon="icon: linkedin"></span></a></li>
+                                    <li><a href=""><span uk-icon="icon: reddit"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Help" class="uk-flex-top" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                        <form>
+                            <fieldset class="uk-fieldset">
+
+                                <legend class="uk-legend">Получить помощь</legend>
+                                <small class="uk-text-muted">Задача организации, в особенности же понимание
+                                    сущности ресурсосберегающих технологий требует анализа новых
+                                    предложений.</small>
+
+                                <div class="uk-child-width-1-2 uk-grid-small uk-margin" uk-grid>
+                                    <div><input class="uk-input" type="text" placeholder="Имя"></div>
+                                    <div><input class="uk-input" type="email" placeholder="Email"></div>
+                                </div>
+
+                                <div class="uk-margin">
+                                    <textarea class="uk-textarea" rows="5"
+                                        placeholder="Какая требуется помощь?"></textarea>
+                                </div>
+
+                                <button class="uk-button uk-button-primary uk-button-small uk-width-1-1">Отправить
+                                    заявку</button>
+
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function SearchOpen() {
+            document.getElementById('SearchOpen').setAttribute("class", "SearchOpenOpen");
+        }
+
+        function SearchOpen2() {
+            document.getElementById('SearchButton').setAttribute("class", "SearchButtonClose");
+        }
+    </script>
+
+    <script src="https://unpkg.com/uikit@3.7.3/dist/js/uikit.min.js"></script>
+    <script src="https://unpkg.com/uikit@3.7.3/dist/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
